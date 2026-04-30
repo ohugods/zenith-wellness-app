@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang='pt-BR'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>Zenith Wellness App</title>
+  <style>
+    body{font-family:Inter,system-ui,sans-serif;margin:0;background:#f8fafc;color:#0f172a}
+    .wrap{padding:20px}
+    h1{margin:0 0 6px}
+    p{margin:0;color:#475569}
+    .grid{display:grid;grid-template-columns:320px 1fr;gap:14px;margin-top:16px}
+    .list{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:10px;max-height:calc(100vh - 170px);overflow:auto}
+    .list button{display:block;width:100%;text-align:left;margin:0 0 8px;border:1px solid #e2e8f0;background:#fff;padding:10px;border-radius:10px;cursor:pointer}
+    .list button.active{background:#0f172a;color:#fff;border-color:#0f172a}
+    .panel{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:10px}
+    iframe{width:100%;height:calc(100vh - 200px);border:1px solid #cbd5e1;border-radius:10px;background:#fff}
+    .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+    a{color:#0f172a;font-weight:600}
+    @media(max-width:1024px){.grid{grid-template-columns:1fr}.list{max-height:260px}iframe{height:68vh}}
+  </style>
+</head>
+<body>
+  <main class='wrap'>
+    <h1>Zenith Wellness App</h1>
+    <p>Categoria: Wellness · Catálogo dinâmico das telas deste app.</p>
+    <section class='grid'>
+      <aside class='list' id='list'>
+        <button type='button' data-screen='sess_es_de_medita_o'>sess_es_de_medita_o</button>
+<button type='button' data-screen='perfil_do_usu_rio'>perfil_do_usu_rio</button>
+      </aside>
+      <article class='panel'>
+        <div class='top'>
+          <strong id='screen-title'>sess_es_de_medita_o</strong>
+          <a id='screen-link' href='screens/sess_es_de_medita_o.html' target='_blank' rel='noreferrer'>Abrir em aba</a>
+        </div>
+        <iframe id='screen-frame' src='screens/sess_es_de_medita_o.html' title='Zenith Wellness App preview'></iframe>
+      </article>
+    </section>
+  </main>
+  <script>
+    const list=document.getElementById('list');
+    const frame=document.getElementById('screen-frame');
+    const title=document.getElementById('screen-title');
+    const link=document.getElementById('screen-link');
+    const buttons=[...list.querySelectorAll('button')];
+    function setScreen(slug){
+      frame.src='screens/'+slug+'.html';
+      title.textContent=slug;
+      link.href='screens/'+slug+'.html';
+      buttons.forEach(btn=>btn.classList.toggle('active', btn.dataset.screen===slug));
+    }
+    buttons.forEach(btn=>btn.addEventListener('click',()=>setScreen(btn.dataset.screen)));
+    setScreen('sess_es_de_medita_o');
+  </script>
+</body>
+</html>
