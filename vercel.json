@@ -1,0 +1,5 @@
+﻿{
+  "rewrites": [
+    { "source": "/screens/:path*", "destination": "/src/screens/:path*" }
+  ]
+}
