@@ -3,6 +3,7 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="icon" href="data:,"/>
 <title>Serene - Meditation Library</title>
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -143,16 +144,16 @@
 <img alt="User profile photo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkDrXdMzTUwCymspiYImxeWbpOv3wtcmXPSAaIvJ1znAgXMZ4qMrDkaRXt4dkJ6n7XnrpU-PvtALTfjrtLTGO4q8O1ULqFmW5LG_SHtQSiqQFMbHamS4HT-m3AvCG-iRO1KSUMxoGV7buzRV-hijHbsuG6uS4Mwg7qxrERwLdbkh_R_P7rndCBxtjKZ5EHageD2od-Bf8WkNRVew2XfgUld_uTrfdvdqW5qpRrjk329si021G17RmXGKY6xznqqLFjOHRNg6q4bLLP"/>
 </button>
 <!-- Desktop Navigation Cluster (Hidden on mobile) -->
-<nav class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+<nav class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2" aria-label="Principal">
 <a class="flex flex-col items-center gap-1 group" href="sess_es_de_medita_o.html">
 <span class="material-symbols-outlined text-zinc-400 dark:text-zinc-500 group-hover:text-emerald-400 transition-colors" data-icon="home">home</span>
 </a>
 <!-- Active State: self_care -->
-<a class="flex flex-col items-center gap-1 group relative" href="sess_es_de_medita_o.html">
+<a class="flex flex-col items-center gap-1 group relative" href="sess_es_de_medita_o.html" aria-current="page">
 <span class="material-symbols-outlined text-emerald-700 dark:text-emerald-300 icon-fill transition-colors" data-icon="self_care">self_care</span>
 <span class="absolute -bottom-2 w-1 h-1 bg-emerald-500 rounded-full"></span>
 </a>
-<a class="flex flex-col items-center gap-1 group" href="sess_es_de_medita_o.html">
+<a class="flex flex-col items-center gap-1 group" href="insights.html">
 <span class="material-symbols-outlined text-zinc-400 dark:text-zinc-500 group-hover:text-emerald-400 transition-colors" data-icon="insights">insights</span>
 </a>
 <a class="flex flex-col items-center gap-1 group" href="perfil_do_usu_rio.html">
@@ -277,21 +278,21 @@
 </section>
 </main>
 <!-- BottomNavBar (Mobile Only) -->
-<nav class="md:hidden bg-white dark:bg-zinc-900 fixed bottom-0 w-full h-20 rounded-t-[32px] border-t border-emerald-50/50 dark:border-zinc-800 shadow-[0_-8px_30px_rgba(167,215,197,0.15)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-safe">
+<nav class="md:hidden bg-white dark:bg-zinc-900 fixed bottom-0 left-0 w-full h-20 rounded-t-[32px] border-t border-emerald-50/50 dark:border-zinc-800 shadow-[0_-8px_30px_rgba(167,215,197,0.15)] z-50 flex justify-around items-center px-8 pb-safe" aria-label="Navegação inferior">
 <!-- Inactive: Home -->
-<a href="sess_es_de_medita_o.html" role="button" class="flex flex-col items-center justify-center text-zinc-400 dark:text-zinc-600 hover:text-emerald-400 dark:hover:text-emerald-300 active:scale-90 transition-all duration-300 ease-out group">
+<a href="sess_es_de_medita_o.html" role="button" aria-label="Início" class="flex flex-col items-center justify-center text-zinc-400 dark:text-zinc-600 hover:text-emerald-400 dark:hover:text-emerald-300 active:scale-90 transition-all duration-300 ease-out group">
 <span class="material-symbols-outlined text-2xl mb-1 transition-colors" data-icon="home">home</span>
 </a>
 <!-- Active: self_care (Library intent matches best) -->
-<a href="sess_es_de_medita_o.html" role="button" class="flex flex-col items-center justify-center relative after:content-[''] after:absolute after:-bottom-2 after:w-1 after:h-1 after:bg-emerald-500 after:rounded-full text-emerald-500 dark:text-emerald-400 hover:text-emerald-400 dark:hover:text-emerald-300 active:scale-90 transition-all duration-300 ease-out group">
+<a href="sess_es_de_medita_o.html" role="button" aria-label="Auto-cuidado" aria-current="page" class="flex flex-col items-center justify-center relative after:content-[''] after:absolute after:-bottom-2 after:w-1 after:h-1 after:bg-emerald-500 after:rounded-full text-emerald-500 dark:text-emerald-400 hover:text-emerald-400 dark:hover:text-emerald-300 active:scale-90 transition-all duration-300 ease-out group">
 <span class="material-symbols-outlined text-2xl mb-1 icon-fill transition-colors" data-icon="self_care" data-weight="fill">self_care</span>
 </a>
 <!-- Inactive: Insights -->
-<a href="sess_es_de_medita_o.html" role="button" class="flex flex-col items-center justify-center text-zinc-400 dark:text-zinc-600 hover:text-emerald-400 dark:hover:text-emerald-300 active:scale-90 transition-all duration-300 ease-out group">
+<a href="insights.html" role="button" aria-label="Insights" class="flex flex-col items-center justify-center text-zinc-400 dark:text-zinc-600 hover:text-emerald-400 dark:hover:text-emerald-300 active:scale-90 transition-all duration-300 ease-out group">
 <span class="material-symbols-outlined text-2xl mb-1 transition-colors" data-icon="insights">insights</span>
 </a>
 <!-- Inactive: Person -->
-<a href="perfil_do_usu_rio.html" role="button" class="flex flex-col items-center justify-center text-zinc-400 dark:text-zinc-600 hover:text-emerald-400 dark:hover:text-emerald-300 active:scale-90 transition-all duration-300 ease-out group">
+<a href="perfil_do_usu_rio.html" role="button" aria-label="Perfil" class="flex flex-col items-center justify-center text-zinc-400 dark:text-zinc-600 hover:text-emerald-400 dark:hover:text-emerald-300 active:scale-90 transition-all duration-300 ease-out group">
 <span class="material-symbols-outlined text-2xl mb-1 transition-colors" data-icon="person">person</span>
 </a>
 </nav>

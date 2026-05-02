@@ -3,7 +3,8 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>User Profile - EVOLVE</title>
+<link rel="icon" href="data:,"/>
+<title>Serene - User Profile</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
@@ -172,25 +173,25 @@
 <img alt="User Profile Photo" class="w-full h-full object-cover" data-alt="A striking portrait of a focused athlete with intense lighting. The image captures a determined expression, lit with a high-contrast style that emphasizes shadow and muscular definition. The dark background is pierced by a subtle electric blue rim light, creating a premium, modern aesthetic consistent with a high-end fitness brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUL1g93wDzH7Zk8s3FHWJmxMZSz4hPv3PFxDT-yPa3ENGgY77M-BxRCtPKhTzqMF3UmVBcpTqNXX8knmZMD63Km61b_Ac13AorjFz_S-t8aZQFfXQC1sdm7h83tGQ_24CQSVQZ_fO1wHJmfeBPy1WGb_eGpRUzUkHYdug-86x_KTMrhrJHHBeFYNNKQyDt3lxBTjARUyYnsYdnUm6lH0NaH3ncq_VaZmAmRZFE3wpHTnutH_wlgn0onWCfn2Fl1Jm3NOzBX4AT82JB"/>
 </div>
 <!-- Navigation cluster for Web (hidden on mobile) -->
-<nav class="hidden md:flex gap-8">
+<nav class="hidden md:flex gap-8" aria-label="Principal">
 <a class="text-gray-400 hover:text-[#DFFF00] transition-colors font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest flex items-center gap-2" href="sess_es_de_medita_o.html">
-<span class="material-symbols-outlined text-[18px]">grid_view</span> Home
+<span class="material-symbols-outlined text-[18px]">home</span> Home
             </a>
 <a class="text-gray-400 hover:text-[#DFFF00] transition-colors font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest flex items-center gap-2" href="sess_es_de_medita_o.html">
-<span class="material-symbols-outlined text-[18px]">fitness_center</span> Workouts
+<span class="material-symbols-outlined text-[18px]">self_care</span> Self-care
             </a>
-<a class="text-gray-400 hover:text-[#DFFF00] transition-colors font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest flex items-center gap-2" href="sess_es_de_medita_o.html">
-<span class="material-symbols-outlined text-[18px]">history</span> History
+<a class="text-gray-400 hover:text-[#DFFF00] transition-colors font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest flex items-center gap-2" href="insights.html">
+<span class="material-symbols-outlined text-[18px]">insights</span> Insights
             </a>
-<a class="text-[#DFFF00] font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest flex items-center gap-2" href="perfil_do_usu_rio.html">
+<a class="text-[#DFFF00] font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest flex items-center gap-2" href="perfil_do_usu_rio.html" aria-current="page">
 <span class="material-symbols-outlined text-[18px]">person</span> Profile
             </a>
 </nav>
-<span class="text-2xl font-black text-[#DFFF00] uppercase italic font-['Space_Grotesk'] tracking-tighter md:hidden">EVOLVE</span>
+<span class="text-2xl font-black text-[#DFFF00] uppercase italic font-['Space_Grotesk'] tracking-tighter md:hidden">Serene</span>
 <div class="hidden md:block w-[120px] text-center">
-<span class="text-2xl font-black text-[#DFFF00] uppercase italic font-['Space_Grotesk'] tracking-tighter">EVOLVE</span>
+<span class="text-2xl font-black text-[#DFFF00] uppercase italic font-['Space_Grotesk'] tracking-tighter">Serene</span>
 </div>
-<button class="text-gray-400 hover:text-[#DFFF00] transition-colors">
+<button type="button" aria-label="Configurações" class="text-gray-400 hover:text-[#DFFF00] transition-colors">
 <span class="material-symbols-outlined">settings</span>
 </button>
 </header>
@@ -358,21 +359,21 @@
 </section>
 </main>
 <!-- BottomNavBar (Mobile Only) -->
-<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#121212]/80 backdrop-blur-2xl z-50 rounded-t-3xl border-t border-[#2A2A2A] shadow-[0_-4px_20px_rgba(223,255,0,0.05)]">
-<a class="flex flex-col items-center justify-center text-gray-500 opacity-60 hover:opacity-100 hover:text-white transition-opacity gap-1 w-16" href="sess_es_de_medita_o.html">
-<span class="material-symbols-outlined text-[24px]">grid_view</span>
+<nav class="md:hidden fixed bottom-0 left-0 w-full h-20 flex justify-around items-center px-4 pb-safe pt-2 bg-[#121212]/80 backdrop-blur-2xl z-50 rounded-t-3xl border-t border-[#2A2A2A] shadow-[0_-4px_20px_rgba(223,255,0,0.05)]" aria-label="Navegação inferior">
+<a class="flex flex-col items-center justify-center text-gray-500 opacity-60 hover:opacity-100 hover:text-white transition-opacity gap-1 w-16" href="sess_es_de_medita_o.html" aria-label="Início">
+<span class="material-symbols-outlined text-[24px]">home</span>
 <span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest mt-1">Home</span>
 </a>
-<a class="flex flex-col items-center justify-center text-gray-500 opacity-60 hover:opacity-100 hover:text-white transition-opacity gap-1 w-16" href="sess_es_de_medita_o.html">
-<span class="material-symbols-outlined text-[24px]">fitness_center</span>
-<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest mt-1">Workouts</span>
+<a class="flex flex-col items-center justify-center text-gray-500 opacity-60 hover:opacity-100 hover:text-white transition-opacity gap-1 w-16" href="sess_es_de_medita_o.html" aria-label="Auto-cuidado">
+<span class="material-symbols-outlined text-[24px]">self_care</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest mt-1">Care</span>
 </a>
-<a class="flex flex-col items-center justify-center text-gray-500 opacity-60 hover:opacity-100 hover:text-white transition-opacity gap-1 w-16" href="sess_es_de_medita_o.html">
-<span class="material-symbols-outlined text-[24px]">history</span>
-<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest mt-1">History</span>
+<a class="flex flex-col items-center justify-center text-gray-500 opacity-60 hover:opacity-100 hover:text-white transition-opacity gap-1 w-16" href="insights.html" aria-label="Insights">
+<span class="material-symbols-outlined text-[24px]">insights</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest mt-1">Insights</span>
 </a>
 <!-- Active State -->
-<a class="flex flex-col items-center justify-center text-[#DFFF00] bg-[#DFFF00]/10 rounded-xl px-4 py-1 shadow-[inset_0_0_10px_rgba(223,255,0,0.2)] gap-1 w-20" href="perfil_do_usu_rio.html">
+<a class="flex flex-col items-center justify-center text-[#DFFF00] bg-[#DFFF00]/10 rounded-xl px-4 py-1 shadow-[inset_0_0_10px_rgba(223,255,0,0.2)] gap-1 w-20" href="perfil_do_usu_rio.html" aria-current="page" aria-label="Perfil">
 <span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">person</span>
 <span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest mt-1">Profile</span>
 </a>
