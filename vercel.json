@@ -1,5 +1,20 @@
-﻿{
+{
   "rewrites": [
-    { "source": "/screens/:path*", "destination": "/src/screens/:path*" }
+    {
+      "source": "/screens/sess_es_de_medita_o.html",
+      "destination": "/src/screens/sessions.html"
+    },
+    {
+      "source": "/src/screens/sess_es_de_medita_o.html",
+      "destination": "/src/screens/sessions.html"
+    },
+    {
+      "source": "/screens/perfil_do_usu_rio.html",
+      "destination": "/src/screens/profile.html"
+    },
+    {
+      "source": "/src/screens/perfil_do_usu_rio.html",
+      "destination": "/src/screens/profile.html"
+    }
   ]
 }
